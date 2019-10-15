@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Update Account Record" icon-name="standard:record">
+        <div class="slds-m-around_medium">
+            <lightning-input label="Name" onchange={handleChange} class="slds-m-bottom_x-small"></lightning-input>
+            <lightning-combobox
+                label="Type"
+                value={selectedOption}
+                options={options}
+                onchange={handleChange}>
+            </lightning-combobox>
+            <lightning-button label="Update Account" variant="brand" onclick={updateAccount}></lightning-button>
+        </div>
+    </lightning-card>
+</template>
